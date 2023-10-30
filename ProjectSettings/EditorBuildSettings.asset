@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  m_configObjects:
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: b2b12d42ed4d71c44ada4a6ea5314438,
+      type: 2}
+    com.htc.upm.wave.xrsdk.xrsettings: {fileID: 11400000, guid: dfb7bd626e828a246ae54fbda02db54c,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 9c508872d817c274784cd4837a50621b,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: cb748194cc627da41ab7c3bde769f11f,
+      type: 2}
