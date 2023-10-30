@@ -9,6 +9,8 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 5b8e10463f7265f4d8e43b3e0322e08a,
+      type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: b2b12d42ed4d71c44ada4a6ea5314438,
       type: 2}
     com.htc.upm.wave.xrsdk.xrsettings: {fileID: 11400000, guid: dfb7bd626e828a246ae54fbda02db54c,
