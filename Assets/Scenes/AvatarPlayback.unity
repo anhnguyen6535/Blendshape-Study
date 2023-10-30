@@ -2739,7 +2739,7 @@ PrefabInstance:
     - target: {fileID: 4888309610810660749, guid: 46dc24f6f5627c543b9ec2c22a4fe9f3,
         type: 3}
       propertyPath: m_BlendShapes.BrowDownLeft
-      value: 0.06253203
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4888309610810660749, guid: 46dc24f6f5627c543b9ec2c22a4fe9f3,
         type: 3}
@@ -2954,7 +2954,7 @@ PrefabInstance:
     - target: {fileID: 6026594767049904236, guid: 46dc24f6f5627c543b9ec2c22a4fe9f3,
         type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[39]
-      value: 6.253203
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6026594767049904236, guid: 46dc24f6f5627c543b9ec2c22a4fe9f3,
         type: 3}
@@ -3191,8 +3191,7 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.06150471
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7620286755875064242, guid: 46dc24f6f5627c543b9ec2c22a4fe9f3, type: 3}
+    m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 46dc24f6f5627c543b9ec2c22a4fe9f3, type: 3}
 --- !u!114 &490122784 stripped
@@ -6014,7 +6013,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   avatar: {fileID: 490122785}
   button: {fileID: 2127267508}
-  condition: 2
+  condition: 1
   ActiveMap:
     m_keys: []
     m_values: 
@@ -6028,7 +6027,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c3df67b2019ed694d93a5b4aacb90168, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 444432ccba701e748816c0211f4a0538, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -12689,7 +12688,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: blendshapes/Test/Lily
+          m_StringArgument: blendshapes/airpollution_actor
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2127267509

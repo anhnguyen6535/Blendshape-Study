@@ -66,9 +66,10 @@ PrefabInstance:
     - target: {fileID: 6430421901417103521, guid: fbc252d561cf501408b59fefb45ac20b,
         type: 3}
       propertyPath: m_Name
-      value: Neutral_Female_w_Mouth_Morph
+      value: Neutral_Female_w_Mouth_Morph Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2846752603726874259, guid: fbc252d561cf501408b59fefb45ac20b, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: fbc252d561cf501408b59fefb45ac20b, type: 3}
 --- !u!1 &1692353597877571456 stripped
