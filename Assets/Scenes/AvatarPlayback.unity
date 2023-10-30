@@ -811,6 +811,12 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0.25
   m_ShadowAngle: 0
+--- !u!1 &75029428 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6607182690265921805, guid: ace913233e4549448a8e7cf0eac95f78,
+    type: 3}
+  m_PrefabInstance: {fileID: 1943335883}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &114815378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1187,6 +1193,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: User's Chair Short Distance
+      objectReference: {fileID: 0}
+    - target: {fileID: 4195449330917118624, guid: d2b00f35f650b624ebf8db31ffde151c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -4143,6 +4154,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Long distance table
       objectReference: {fileID: 0}
+    - target: {fileID: 6607182690265921805, guid: ace913233e4549448a8e7cf0eac95f78,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ace913233e4549448a8e7cf0eac95f78, type: 3}
@@ -4238,6 +4254,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: User's Chair Long Distance
+      objectReference: {fileID: 0}
+    - target: {fileID: 4195449330917118624, guid: d2b00f35f650b624ebf8db31ffde151c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -5664,6 +5685,7 @@ GameObject:
   m_Component:
   - component: {fileID: 983872058}
   - component: {fileID: 983872059}
+  - component: {fileID: 983872061}
   - component: {fileID: 983872060}
   m_Layer: 0
   m_Name: PlaybackManager
@@ -5801,6 +5823,32 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &983872061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983872057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4763875f0cbb8f4dbf447038927921d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isShortDistance: 1
+  isOnlyHeadMovement: 1
+  shortDistance:
+  - {fileID: 75029428}
+  - {fileID: 1659188528}
+  longDistance:
+  - {fileID: 995291612}
+  - {fileID: 1347013706}
+--- !u!1 &995291612 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6607182690265921805, guid: ace913233e4549448a8e7cf0eac95f78,
+    type: 3}
+  m_PrefabInstance: {fileID: 635507570}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1042514925
 GameObject:
   m_ObjectHideFlags: 0
@@ -8525,6 +8573,12 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0.25
   m_ShadowAngle: 0
+--- !u!1 &1347013706 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4195449330917118624, guid: d2b00f35f650b624ebf8db31ffde151c,
+    type: 3}
+  m_PrefabInstance: {fileID: 639310322}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1384017034
 GameObject:
   m_ObjectHideFlags: 0
@@ -10369,6 +10423,12 @@ Transform:
   m_Father: {fileID: 1676770856}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1659188528 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4195449330917118624, guid: d2b00f35f650b624ebf8db31ffde151c,
+    type: 3}
+  m_PrefabInstance: {fileID: 198297795}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1672262762
 GameObject:
   m_ObjectHideFlags: 0
@@ -11536,6 +11596,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Short distance table
+      objectReference: {fileID: 0}
+    - target: {fileID: 6607182690265921805, guid: ace913233e4549448a8e7cf0eac95f78,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
