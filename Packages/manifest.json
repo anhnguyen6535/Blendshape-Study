@@ -1,7 +1,5 @@
 {
   "dependencies": {
-    "com.htc.upm.wave.openxr": "1.0.5",
-    "com.htc.upm.wave.xrsdk": "5.4.0-r.8",
     "com.soupday.cc3_unity_tools": "file:../Character_Creator_and_iClone_Auto_Setup_1.4.3_for_Unity_HDRP12",
     "com.unity.ai.navigation": "1.1.4",
     "com.unity.collab-proxy": "2.0.5",
@@ -18,9 +16,7 @@
     "com.unity.ugui": "1.0.0",
     "com.unity.visualscripting": "1.8.0",
     "com.unity.xr.arkit": "5.0.6",
-    "com.unity.xr.interaction.toolkit": "2.4.0",
     "com.unity.xr.oculus": "4.0.0",
-    "com.unity.xr.openxr": "1.8.1",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
