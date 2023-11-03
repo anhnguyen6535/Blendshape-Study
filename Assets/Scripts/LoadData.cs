@@ -44,6 +44,7 @@ public class LoadData : MonoBehaviour
     public int condition;
     public FaceActor actor;
     public bool start = false;
+    public string blendshapePath = "blendshapes/airpollution_actor";
 
     public Dictionary<string, bool> ActiveMapOrigin = new Dictionary<string, bool>()
         {
@@ -239,7 +240,7 @@ public class LoadData : MonoBehaviour
         Dictionary<string, bool> activeMapDict = ActiveMap.toDictionary();
         SaveJsonFile(activeMapDict, fileName);
 
-        actor.triggerPlay("blendshapes/airpollution_actor");
+        actor.triggerPlay(blendshapePath);
         Invoke("PlayAudio", 3f);
 
     }
