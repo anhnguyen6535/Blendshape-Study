@@ -42,6 +42,8 @@ public class LoadData : MonoBehaviour
     AudioSource audioSource;
 
     public int condition;
+    public FaceActor actor;
+    public bool start = false;
 
     public Dictionary<string, bool> ActiveMapOrigin = new Dictionary<string, bool>()
         {
@@ -210,7 +212,7 @@ public class LoadData : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //AddListener·Î jump ÇÔ¼ö ¿¬°á
+        //AddListenerï¿½ï¿½ jump ï¿½Ô¼ï¿½ ï¿½ï¿½ï¿½ï¿½
         button.onClick.AddListener(triggerPlay);
         audioSource = gameObject.GetComponent<AudioSource>();
     }
@@ -218,7 +220,10 @@ public class LoadData : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(start){
+            triggerPlay();
+            start = false;
+        }
     }
 
     void PlayAudio()
@@ -228,14 +233,13 @@ public class LoadData : MonoBehaviour
 
     public void triggerPlay()
     {
-        
-
         // Save the dictionary to a JSON file
         string fileName = "config.json";
 
         Dictionary<string, bool> activeMapDict = ActiveMap.toDictionary();
         SaveJsonFile(activeMapDict, fileName);
 
+        actor.triggerPlay("blendshapes/airpollution_actor");
         Invoke("PlayAudio", 3f);
 
     }
