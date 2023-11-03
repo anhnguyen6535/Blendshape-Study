@@ -817,6 +817,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1943335883}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &105918511 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100004, guid: 126d619cf4daa52469682f85c1378b4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 418200728}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &114815378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,7 +1204,7 @@ PrefabInstance:
     - target: {fileID: 3563167939161442330, guid: d2b00f35f650b624ebf8db31ffde151c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.015310379
+      value: 0.032
       objectReference: {fileID: 0}
     - target: {fileID: 3563167939161442330, guid: d2b00f35f650b624ebf8db31ffde151c,
         type: 3}
@@ -1208,7 +1214,7 @@ PrefabInstance:
     - target: {fileID: 3563167939161442330, guid: d2b00f35f650b624ebf8db31ffde151c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.10521269
+      value: 0.741
       objectReference: {fileID: 0}
     - target: {fileID: 3563167939161442330, guid: d2b00f35f650b624ebf8db31ffde151c,
         type: 3}
@@ -4740,7 +4746,7 @@ PrefabInstance:
     - target: {fileID: 6607182690265921805, guid: ace913233e4549448a8e7cf0eac95f78,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4768,17 +4774,17 @@ PrefabInstance:
     - target: {fileID: 3563167939161442330, guid: d2b00f35f650b624ebf8db31ffde151c,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 3563167939161442330, guid: d2b00f35f650b624ebf8db31ffde151c,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.79
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 3563167939161442330, guid: d2b00f35f650b624ebf8db31ffde151c,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.79
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 3563167939161442330, guid: d2b00f35f650b624ebf8db31ffde151c,
         type: 3}
@@ -4843,7 +4849,7 @@ PrefabInstance:
     - target: {fileID: 4195449330917118624, guid: d2b00f35f650b624ebf8db31ffde151c,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6579,6 +6585,7 @@ MonoBehaviour:
   condition: 1
   actor: {fileID: 490122784}
   start: 0
+  blendshapePath: blendshapes/airpollution_actor
   ActiveMap:
     m_keys: []
     m_values: 
@@ -6685,22 +6692,20 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983872057}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4763875f0cbb8f4dbf447038927921d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isShortDistance: 1
+  isShortDistance: 0
   isOnlyHeadMovement: 1
-  start: 0
-  fileName: blendshapes/airpollution_actor
   shortDistance:
-  - {fileID: 75029428}
   - {fileID: 1659188528}
+  - {fileID: 75029428}
   longDistance:
-  - {fileID: 995291612}
   - {fileID: 1347013706}
-  actor: {fileID: 490122784}
+  - {fileID: 995291612}
+  xrCamera: {fileID: 105918511}
 --- !u!1 &995291612 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6607182690265921805, guid: ace913233e4549448a8e7cf0eac95f78,
@@ -12883,7 +12888,7 @@ PrefabInstance:
     - target: {fileID: 5835184118292849591, guid: ace913233e4549448a8e7cf0eac95f78,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0017293654
+      value: 0.015
       objectReference: {fileID: 0}
     - target: {fileID: 5835184118292849591, guid: ace913233e4549448a8e7cf0eac95f78,
         type: 3}
@@ -12893,7 +12898,7 @@ PrefabInstance:
     - target: {fileID: 5835184118292849591, guid: ace913233e4549448a8e7cf0eac95f78,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.4472344
+      value: 1.301
       objectReference: {fileID: 0}
     - target: {fileID: 5835184118292849591, guid: ace913233e4549448a8e7cf0eac95f78,
         type: 3}
