@@ -2900,6 +2900,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4888309610810660749, guid: 46dc24f6f5627c543b9ec2c22a4fe9f3,
         type: 3}
+      propertyPath: m_EnabledChannels
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4888309610810660749, guid: 46dc24f6f5627c543b9ec2c22a4fe9f3,
+        type: 3}
       propertyPath: m_HeadOrientation.x
       value: 347.51712
       objectReference: {fileID: 0}
@@ -7047,7 +7052,7 @@ MonoBehaviour:
   condition: 1
   actor: {fileID: 490122784}
   start: 0
-  blendshapePath: Face/education
+  blendshapePath: Face/water
   ActiveMap:
     m_keys: []
     m_values: 
@@ -7061,7 +7066,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a7087c5a9f98f684a99647d19fdd09b9, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 022d48283660eb245a857fad92053a1e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
