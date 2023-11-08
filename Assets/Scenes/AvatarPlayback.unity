@@ -7047,7 +7047,7 @@ MonoBehaviour:
   condition: 1
   actor: {fileID: 490122784}
   start: 0
-  blendshapePath: blendshapes/airpollution_actor
+  blendshapePath: Face/education
   ActiveMap:
     m_keys: []
     m_values: 
@@ -7061,7 +7061,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 444432ccba701e748816c0211f4a0538, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a7087c5a9f98f684a99647d19fdd09b9, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
