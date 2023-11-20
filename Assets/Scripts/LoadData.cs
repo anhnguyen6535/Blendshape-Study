@@ -45,6 +45,7 @@ public class LoadData : MonoBehaviour
     public FaceActor actor;
     public bool start = false;
     public string blendshapePath = "blendshapes/airpollution_actor";
+    private Animator animator;
 
     public Dictionary<string, bool> ActiveMapOrigin = new Dictionary<string, bool>()
         {
@@ -216,6 +217,7 @@ public class LoadData : MonoBehaviour
         //AddListener�� jump �Լ� ����
         button.onClick.AddListener(triggerPlay);
         audioSource = gameObject.GetComponent<AudioSource>();
+        animator = avatar.GetComponent<Animator>();    
     }
 
     // Update is called once per frame
@@ -230,6 +232,9 @@ public class LoadData : MonoBehaviour
     void PlayAudio()
     {
         audioSource.Play();
+        animator.SetBool("talk", true);
+        Debug.Log("true");
+        StartCoroutine(AudioFinish()); 
     }
 
     public void triggerPlay()
@@ -241,9 +246,14 @@ public class LoadData : MonoBehaviour
         SaveJsonFile(activeMapDict, fileName);
 
         actor.triggerPlay(blendshapePath);
-        Invoke("PlayAudio", 3f);
-
+        Invoke("PlayAudio", 3f); 
     }
 
-    
+    IEnumerator AudioFinish() {
+        yield return new WaitWhile(()=>audioSource.isPlaying);
+        
+        animator.SetBool("talk", false);
+        Debug.Log("false");
+    }
+
 }
