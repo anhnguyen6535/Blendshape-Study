@@ -47,6 +47,7 @@ public class LoadData : MonoBehaviour
     [SerializeField] private GameObject canvas;
     public string blendshapePath = "blendshapes/airpollution_actor";
     private Animator animator;
+    public bool isOnlyHeadMovement = true; 
 
     public Dictionary<string, bool> ActiveMapOrigin = new Dictionary<string, bool>()
         {
@@ -233,7 +234,7 @@ public class LoadData : MonoBehaviour
     void PlayAudio()
     {
         audioSource.Play();
-        animator.SetInteger("state", 1);
+        if(!isOnlyHeadMovement) animator.SetInteger("state", 1);
         Debug.Log("true");
         StartCoroutine(AudioFinish()); 
     }
