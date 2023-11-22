@@ -44,6 +44,7 @@ public class LoadData : MonoBehaviour
     public int condition;
     public FaceActor actor;
     public bool start = false;
+    [SerializeField] private GameObject canvas;
     public string blendshapePath = "blendshapes/airpollution_actor";
     private Animator animator;
 
@@ -217,7 +218,7 @@ public class LoadData : MonoBehaviour
         //AddListener�� jump �Լ� ����
         button.onClick.AddListener(triggerPlay);
         audioSource = gameObject.GetComponent<AudioSource>();
-        animator = avatar.GetComponent<Animator>();    
+        animator = avatar.GetComponent<Animator>();   
     }
 
     // Update is called once per frame
@@ -232,7 +233,7 @@ public class LoadData : MonoBehaviour
     void PlayAudio()
     {
         audioSource.Play();
-        animator.SetBool("talk", true);
+        animator.SetInteger("state", 1);
         Debug.Log("true");
         StartCoroutine(AudioFinish()); 
     }
@@ -252,7 +253,8 @@ public class LoadData : MonoBehaviour
     IEnumerator AudioFinish() {
         yield return new WaitWhile(()=>audioSource.isPlaying);
         
-        animator.SetBool("talk", false);
+        canvas.SetActive(true);
+        animator.SetInteger("state", 0);
         Debug.Log("false");
     }
 
