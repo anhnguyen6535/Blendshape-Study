@@ -8119,11 +8119,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   avatar: {fileID: 490122785}
   button: {fileID: 2127267508}
-  condition: 3
+  condition: 2
   actor: {fileID: 490122784}
   start: 0
   canvas: {fileID: 203987156}
-  blendshapePath: Face/healthcare
+  blendshapePath: Face/water
   isOnlyHeadMovement: 0
   ActiveMap:
     m_keys: []
@@ -8138,7 +8138,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 66822b9cad24c1644ac4d0e01806435e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9e2f6e146b2fed642ae8d1b2a7c3c0cd, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
