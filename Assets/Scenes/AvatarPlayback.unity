@@ -4707,62 +4707,62 @@ MonoBehaviour:
   m_Channels: 15
   m_Pose:
     BlendShapes:
-      BrowDownLeft: 0.06253203
-      BrowDownRight: 0.065831944
-      BrowInnerUp: 0.07299669
+      BrowDownLeft: 0.0031702078
+      BrowDownRight: 0.003098207
+      BrowInnerUp: 0.028459981
       BrowOuterUpLeft: 0
       BrowOuterUpRight: 0
-      CheekPuff: 0.044867706
-      CheekSquintLeft: 0.06682182
-      CheekSquintRight: 0.06406781
-      EyeBlinkLeft: 0.0033180646
-      EyeBlinkRight: 0.003283686
-      EyeLookDownLeft: 0.1479774
-      EyeLookDownRight: 0.14736171
-      EyeLookInLeft: 0
-      EyeLookInRight: 0.15683621
-      EyeLookOutLeft: 0.0464583
+      CheekPuff: 0.040045086
+      CheekSquintLeft: 0.021020086
+      CheekSquintRight: 0.021525223
+      EyeBlinkLeft: 0.0636333
+      EyeBlinkRight: 0.06351109
+      EyeLookDownLeft: 0.26699558
+      EyeLookDownRight: 0.2672684
+      EyeLookInLeft: 0.08181247
+      EyeLookInRight: 0.033599608
+      EyeLookOutLeft: 0
       EyeLookOutRight: 0
       EyeLookUpLeft: 0
       EyeLookUpRight: 0
-      EyeSquintLeft: 0.04873765
-      EyeSquintRight: 0.04871628
-      EyeWideLeft: 0.07908336
-      EyeWideRight: 0.07721193
-      JawForward: 0.010637024
+      EyeSquintLeft: 0.017879797
+      EyeSquintRight: 0.01788017
+      EyeWideLeft: 0
+      EyeWideRight: 0
+      JawForward: 0.0034885819
       JawLeft: 0
-      JawOpen: 0.02788622
-      JawRight: 0.0005619114
-      MouthClose: 0.030234937
-      MouthDimpleLeft: 0.016050046
-      MouthDimpleRight: 0.014951423
+      JawOpen: 0.009527853
+      JawRight: 0.008605589
+      MouthClose: 0.010802483
+      MouthDimpleLeft: 0.007126752
+      MouthDimpleRight: 0.0068385364
       MouthFrownLeft: 0
-      MouthFrownRight: 0
-      MouthFunnel: 0.02963843
-      MouthLeft: 0.004274552
-      MouthLowerDownLeft: 0.025019526
-      MouthLowerDownRight: 0.023918053
-      MouthPressLeft: 0.08121408
-      MouthPressRight: 0.08741342
-      MouthPucker: 0.114104375
+      MouthFrownRight: 0.034138553
+      MouthFunnel: 0.013030688
+      MouthLeft: 0.018801076
+      MouthLowerDownLeft: 0.006895824
+      MouthLowerDownRight: 0.006258737
+      MouthPressLeft: 0.054475326
+      MouthPressRight: 0.05424161
+      MouthPucker: 0.09062093
       MouthRight: 0
-      MouthRollLower: 0.044486806
-      MouthRollUpper: 0.013132402
-      MouthShrugLower: 0.173015
-      MouthShrugUpper: 0.12454431
-      MouthSmileLeft: 0.0053174305
-      MouthSmileRight: 0.0073100543
-      MouthStretchLeft: 0.058301304
-      MouthStretchRight: 0.056973793
-      MouthUpperUpLeft: 0.037035525
-      MouthUpperUpRight: 0.03281118
-      NoseSneerLeft: 0.17041406
-      NoseSneerRight: 0.14266473
-      TongueOut: 0.00000057494174
-    HeadPosition: {x: -0.006028324, y: 0.0046998407, z: -0.37485382}
-    HeadOrientation: {x: 0.13192436, y: -0.1418874, z: 0.14100638, w: -0.9708662}
-    LeftEyeOrientation: {x: -0.044942267, y: 0.047836088, z: 0.002154513, w: -0.9978413}
-    RightEyeOrientation: {x: -0.045177195, y: 0.014174916, z: 0.00064110215, w: -0.99887824}
+      MouthRollLower: 0.01736675
+      MouthRollUpper: 0.0063459445
+      MouthShrugLower: 0.18172282
+      MouthShrugUpper: 0.13879998
+      MouthSmileLeft: 0.0077429437
+      MouthSmileRight: 0
+      MouthStretchLeft: 0.021442598
+      MouthStretchRight: 0.022159714
+      MouthUpperUpLeft: 0.015784163
+      MouthUpperUpRight: 0.014812365
+      NoseSneerLeft: 0.059629314
+      NoseSneerRight: 0.05818273
+      TongueOut: 0.0000031164336
+    HeadPosition: {x: -0.0077893673, y: 0.014239704, z: -0.37950054}
+    HeadOrientation: {x: 0.01952276, y: -0.013062171, z: 0.018416554, w: -0.9995545}
+    LeftEyeOrientation: {x: -0.08153756, y: 0.010228062, z: 0.00083680183, w: -0.99661744}
+    RightEyeOrientation: {x: -0.08143337, y: -0.024902564, z: -0.0020352968, w: -0.99636555}
   m_SyncPresentationOffset:
     m_FrameNumber: 0
     m_Subframe:
