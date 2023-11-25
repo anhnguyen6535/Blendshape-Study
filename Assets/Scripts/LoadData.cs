@@ -234,6 +234,7 @@ public class LoadData : MonoBehaviour
     void PlayAudio()
     {
         audioSource.Play();
+        // if(!isOnlyHeadMovement) animator.SetLayerWeight(1, 1);
         if(!isOnlyHeadMovement) animator.SetInteger("state", 1);
         Debug.Log("true");
         StartCoroutine(AudioFinish()); 
@@ -255,7 +256,8 @@ public class LoadData : MonoBehaviour
         yield return new WaitWhile(()=>audioSource.isPlaying);
         
         canvas.SetActive(true);
-        animator.SetInteger("state", 0);
+        // animator.SetLayerWeight(1, 0);
+        if(!isOnlyHeadMovement) animator.SetInteger("state", 0);
         Debug.Log("false");
     }
 

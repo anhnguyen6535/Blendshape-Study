@@ -6,21 +6,31 @@ using Unity.LiveCapture.ARKitFaceCapture;
 public class ConditionController : MonoBehaviour
 {
     public bool isShortDistance = true;
-    public bool isOnlyHeadMovement = true;
 
     [SerializeField] private GameObject[] shortDistance;
     [SerializeField] private GameObject[] longDistance;
     [SerializeField] private GameObject xrCamera;
+    [SerializeField] private GameObject avatar;
+    private GameObject cameraPlaceholder;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        cameraPlaceholder = GameObject.Find("CameraPlaceholder");
+        xrCamera.transform.position = cameraPlaceholder.transform.position;
         // make sure that the first element in each array is user's chair
         if(isShortDistance){
-            xrCamera.transform.position = shortDistance[0].transform.position;
+            avatar.transform.position = new Vector3(
+                shortDistance[0].transform.position.x,
+                shortDistance[0].transform.position.y,
+                shortDistance[0].transform.position.z  - 0.3f
+            );
         }else{
-            xrCamera.transform.position = longDistance[0].transform.position;
+            avatar.transform.position = new Vector3(
+                longDistance[0].transform.position.x,
+                longDistance[0].transform.position.y,
+                longDistance[0].transform.position.z  - 0.3f
+            );
         }
         conditionTrigger();
     }
