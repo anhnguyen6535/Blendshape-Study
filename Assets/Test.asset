@@ -916,7 +916,7 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-      m_IsExpanded: 0
+      m_IsExpanded: 1
     - m_Location: 36
       m_ShapeIndex: 70
       m_Config:
@@ -955,7 +955,7 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-      m_IsExpanded: 0
+      m_IsExpanded: 1
     - m_Location: 33
       m_ShapeIndex: 81
       m_Config:
@@ -994,7 +994,7 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-      m_IsExpanded: 0
+      m_IsExpanded: 1
     - m_Location: 34
       m_ShapeIndex: 82
       m_Config:
@@ -1033,7 +1033,7 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-      m_IsExpanded: 0
+      m_IsExpanded: 1
     - m_Location: 47
       m_ShapeIndex: 79
       m_Config:
@@ -1072,7 +1072,7 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-      m_IsExpanded: 0
+      m_IsExpanded: 1
     - m_Location: 48
       m_ShapeIndex: 80
       m_Config:
@@ -1111,7 +1111,7 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-      m_IsExpanded: 0
+      m_IsExpanded: 1
     - m_Location: 37
       m_ShapeIndex: 71
       m_Config:
@@ -1150,7 +1150,7 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-      m_IsExpanded: 0
+      m_IsExpanded: 1
     - m_Location: 39
       m_ShapeIndex: 74
       m_Config:
@@ -1189,7 +1189,7 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-      m_IsExpanded: 0
+      m_IsExpanded: 1
     - m_Location: 40
       m_ShapeIndex: 73
       m_Config:
@@ -1228,7 +1228,7 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-      m_IsExpanded: 0
+      m_IsExpanded: 1
     - m_Location: 41
       m_ShapeIndex: 78
       m_Config:
@@ -1267,7 +1267,7 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-      m_IsExpanded: 0
+      m_IsExpanded: 1
     - m_Location: 42
       m_ShapeIndex: 77
       m_Config:
@@ -1306,7 +1306,7 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-      m_IsExpanded: 0
+      m_IsExpanded: 1
     - m_Location: 43
       m_ShapeIndex: 61
       m_Config:
@@ -1345,7 +1345,7 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-      m_IsExpanded: 0
+      m_IsExpanded: 1
     - m_Location: 44
       m_ShapeIndex: 62
       m_Config:
@@ -1384,7 +1384,7 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-      m_IsExpanded: 0
+      m_IsExpanded: 1
     - m_Location: 45
       m_ShapeIndex: 65
       m_Config:
@@ -1423,7 +1423,7 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-      m_IsExpanded: 0
+      m_IsExpanded: 1
     - m_Location: 46
       m_ShapeIndex: 66
       m_Config:
@@ -1462,7 +1462,7 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-      m_IsExpanded: 0
+      m_IsExpanded: 1
     - m_Location: 49
       m_ShapeIndex: 55
       m_Config:
@@ -1501,7 +1501,7 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-      m_IsExpanded: 0
+      m_IsExpanded: 1
     - m_Location: 50
       m_ShapeIndex: 56
       m_Config:
@@ -1540,7 +1540,7 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-      m_IsExpanded: 0
+      m_IsExpanded: 1
     - m_Location: 51
       m_ShapeIndex: 2
       m_Config:
@@ -1579,7 +1579,7 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-      m_IsExpanded: 0
+      m_IsExpanded: 1
     - m_Location: 14
       m_ShapeIndex: 49
       m_Config:
@@ -1774,7 +1774,7 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-      m_IsExpanded: 0
+      m_IsExpanded: 1
     - m_Location: 25
       m_ShapeIndex: 23
       m_Config:
@@ -1813,7 +1813,7 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-      m_IsExpanded: 0
+      m_IsExpanded: 1
     - m_Location: 0
       m_ShapeIndex: 39
       m_Config:
@@ -2086,7 +2086,7 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-      m_IsExpanded: 0
+      m_IsExpanded: 1
     - m_Location: 7
       m_ShapeIndex: 58
       m_Config:
@@ -2125,7 +2125,7 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-      m_IsExpanded: 0
+      m_IsExpanded: 1
     m_IsExpanded: 1
   m_EyeMovementDriver: 1
   m_LeftEye: CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_NeckTwist01/CC_Base_NeckTwist02/CC_Base_Head/CC_Base_FacialBone/CC_Base_L_Eye
