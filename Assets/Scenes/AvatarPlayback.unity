@@ -9054,7 +9054,7 @@ MonoBehaviour:
   actor: {fileID: 8884514}
   start: 0
   canvas: {fileID: 203987156}
-  blendshapePath: face/waste
+  blendshapePath: blendshapes/airpollution_actor
   isOnlyHeadMovement: 0
   ActiveMap:
     m_keys: []
@@ -9069,7 +9069,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b0523bf91fee71344b557d8c4cab06e8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 444432ccba701e748816c0211f4a0538, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
