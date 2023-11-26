@@ -1893,7 +1893,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: e2c0597fc9f9cad4ab7578538f94cf65, type: 2}
+      objectReference: {fileID: 9100000, guid: 8bf36a0d5015c98439ced0351f7ccf89, type: 2}
     - target: {fileID: 1617488540869967543, guid: 33c9d04de1d85714fbddacbf88cc82d4,
         type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[2]
@@ -2318,7 +2318,7 @@ PrefabInstance:
     - target: {fileID: 6406820769934340683, guid: 33c9d04de1d85714fbddacbf88cc82d4,
         type: 3}
       propertyPath: m_EnabledChannels
-      value: 15
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6406820769934340683, guid: 33c9d04de1d85714fbddacbf88cc82d4,
         type: 3}
@@ -9054,8 +9054,8 @@ MonoBehaviour:
   actor: {fileID: 8884514}
   start: 0
   canvas: {fileID: 203987156}
-  blendshapePath: blendshapes/airpollution_actor
-  isOnlyHeadMovement: 1
+  blendshapePath: face/waste
+  isOnlyHeadMovement: 0
   ActiveMap:
     m_keys: []
     m_values: 
@@ -9069,7 +9069,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 444432ccba701e748816c0211f4a0538, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b0523bf91fee71344b557d8c4cab06e8, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

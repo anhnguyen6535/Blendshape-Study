@@ -257,6 +257,7 @@ public class LoadData : MonoBehaviour
         
         canvas.SetActive(true);
         // animator.SetLayerWeight(1, 0);
+        // if(!isOnlyHeadMovement) animator.SetLayerWeight(1, 0);
         if(!isOnlyHeadMovement) animator.SetInteger("state", 0);
         Debug.Log("false");
     }
