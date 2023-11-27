@@ -1893,7 +1893,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 8bf36a0d5015c98439ced0351f7ccf89, type: 2}
+      objectReference: {fileID: 9100000, guid: 4d0fe8cae359ba74e9861d926e805c03, type: 2}
     - target: {fileID: 1617488540869967543, guid: 33c9d04de1d85714fbddacbf88cc82d4,
         type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[2]
