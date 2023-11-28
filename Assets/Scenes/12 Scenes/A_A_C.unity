@@ -9055,7 +9055,7 @@ MonoBehaviour:
   start: 0
   canvas: {fileID: 203987156}
   blendshapePath: face/employment
-  isOnlyHeadMovement: 0
+  isOnlyHeadMovement: 1
   ActiveMap:
     m_keys: []
     m_values: 
