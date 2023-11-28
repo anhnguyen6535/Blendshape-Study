@@ -9050,7 +9050,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   avatar: {fileID: 8884513}
   button: {fileID: 2127267508}
-  condition: 3
+  condition: 1
   actor: {fileID: 8884514}
   start: 0
   canvas: {fileID: 203987156}
