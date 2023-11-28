@@ -9055,7 +9055,7 @@ MonoBehaviour:
   start: 0
   canvas: {fileID: 203987156}
   blendshapePath: face/employment
-  isOnlyHeadMovement: 0
+  isOnlyHeadMovement: 1
   ActiveMap:
     m_keys: []
     m_values: 
@@ -9167,7 +9167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4763875f0cbb8f4dbf447038927921d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isShortDistance: 1
+  isShortDistance: 0
   shortDistance:
   - {fileID: 1214413460}
   - {fileID: 405743378}
