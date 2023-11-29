@@ -2318,7 +2318,7 @@ PrefabInstance:
     - target: {fileID: 6406820769934340683, guid: 33c9d04de1d85714fbddacbf88cc82d4,
         type: 3}
       propertyPath: m_EnabledChannels
-      value: 9
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6406820769934340683, guid: 33c9d04de1d85714fbddacbf88cc82d4,
         type: 3}
@@ -9054,7 +9054,7 @@ MonoBehaviour:
   actor: {fileID: 8884514}
   start: 0
   canvas: {fileID: 203987156}
-  blendshapePath: face/airpollution
+  blendshapePath: face/deforestation
   isOnlyHeadMovement: 0
   ActiveMap:
     m_keys: []
@@ -9069,7 +9069,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a9c20a9ffaedf074e8008b44a999ab12, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8e831345956b57545a6d0481d26a6163, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
