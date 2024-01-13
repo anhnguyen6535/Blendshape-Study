@@ -229,7 +229,7 @@ namespace Unity.LiveCapture.ARKitFaceCapture
 
                 List<float> frame = wholeData[frameIndex];
 
-                Debug.Log($"{frameIndex}, {frame.Count}");
+                // Debug.Log($"{frameIndex}, {frame.Count}");
 
                 setBlendshapes(frame);
                 UpdateRig(true);
@@ -237,6 +237,8 @@ namespace Unity.LiveCapture.ARKitFaceCapture
                 if (frameIndex > wholeData.Count - 10)
                 {
                     nowPlaying = false;
+                    Debug.Log("Now playing: " + nowPlaying);
+                    frameIndex = 0;
                 }
                 
             }
@@ -390,6 +392,8 @@ namespace Unity.LiveCapture.ARKitFaceCapture
             bool endOfFile = false;
             int index = 0;
 
+            BlendShapeKeyFromCSV = new List<string>();
+
             while (!endOfFile)
             {
                 string data_String = sr.ReadLine();
@@ -398,7 +402,7 @@ namespace Unity.LiveCapture.ARKitFaceCapture
                     endOfFile = true;
                     break;
                 }
-                var data_values = data_String.Split(','); //string, string≈∏¿‘
+                var data_values = data_String.Split(','); //string, string≈∏ÔøΩÔøΩ
 
                 var tmp = new List<float>();
                 for (int i = 2; i < data_values.Length - 9; i++)
@@ -416,14 +420,14 @@ namespace Unity.LiveCapture.ARKitFaceCapture
 
                 }
 
-                if (index == 0)
-                {
-                   foreach (string key in BlendShapeKeyFromCSV)
-                    {
-                        Debug.Log(key);
-                    }
-                    Debug.Log($"Number of Key : {BlendShapeKeyFromCSV.Count}");
-                }
+                // if (index == 0)
+                // {
+                //    foreach (string key in BlendShapeKeyFromCSV)
+                //     {
+                //         Debug.Log(key);
+                //     }
+                //     Debug.Log($"Number of Key : {BlendShapeKeyFromCSV.Count}");
+                // }
 
                 list.Add(tmp);
                 index += 1;
@@ -445,13 +449,13 @@ namespace Unity.LiveCapture.ARKitFaceCapture
                 if (ActiveMap[shapeKey] == true)
                 {
                     int realKey = MappingOrder[shapeKey];
+                    // Debug.Log($"real key:  {realKey}, blendshape index: {blendshapeIndex}");
                     m_BlendShapes[realKey] = frame[blendshapeIndex];
-                    // Debug.Log($"{realKey}, {blendshapeIndex}");
                     
                     
                     if (shapeKey == "JawOpen")
                     {
-                        Debug.Log($"{frame[blendshapeIndex]}");
+                        // Debug.Log($"{frame[blendshapeIndex]}");
                     }
                     
                 }
@@ -481,7 +485,7 @@ namespace Unity.LiveCapture.ARKitFaceCapture
                 // Deserialize the JSON string to a Dictionary<string, bool>
                 Dictionary<string, bool> loadedDictionary = JsonConvert.DeserializeObject<Dictionary<string, bool>>(jsonString);
 
-                Debug.Log("JSON file loaded from: " + filePath);
+                // Debug.Log("JSON file loaded from: " + filePath);
 
                 return loadedDictionary;
             }
@@ -504,10 +508,10 @@ namespace Unity.LiveCapture.ARKitFaceCapture
             string jsonContent = File.ReadAllText(filePath);
             DefaultfacialExpressions = JsonConvert.DeserializeObject<Dictionary<string, float>>(jsonContent);
 
-            foreach (var obj in DefaultfacialExpressions)
-            {
-                Debug.Log($"Facial Expressions Loaded: {obj.Key}, {obj.Value}");
-            }
+            // foreach (var obj in DefaultfacialExpressions)
+            // {
+            //     Debug.Log($"Facial Expressions Loaded: {obj.Key}, {obj.Value}");
+            // }
             
         }
 
@@ -522,21 +526,21 @@ namespace Unity.LiveCapture.ARKitFaceCapture
         {
             ActiveMap = LoadJsonFile("config.json");
             LoadJsonDefaultJsonFile("default_blendshapes.json");
-            Debug.Log($"Active, {ActiveMap}");
+            // Debug.Log($"Active, {ActiveMap}");
 
-            foreach(KeyValuePair<string, bool> items in ActiveMap)
-            {
-                if (items.Value)
-                {
-                    Debug.Log($"{items.Key}, {items.Value}");
-                }
-            }
+            // foreach(KeyValuePair<string, bool> items in ActiveMap)
+            // {
+            //     if (items.Value)
+            //     {
+            //         Debug.Log($"{items.Key}, {items.Value}");
+            //     }
+            // }
         }
 
         public void triggerPlay(string filename)
         {
             
-            Debug.Log("Triggered playback!");
+            // Debug.Log("Triggered playback!");
 
             Invoke("loadMap", 2f);
 

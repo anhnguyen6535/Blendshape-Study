@@ -6,6 +6,7 @@ using Unity.LiveCapture.ARKitFaceCapture;
 
 using System.IO;
 using Newtonsoft.Json;
+using System.Linq;
 
 
 [System.Serializable]
@@ -48,6 +49,9 @@ public class LoadData : MonoBehaviour
     public string blendshapePath = "blendshapes/airpollution_actor";
     private Animator animator;
     public bool isOnlyHeadMovement = true; 
+    public bool additionalStudy = true;
+    public bool next = false;
+    private List<Object> recordedCSV = new();
 
     public Dictionary<string, bool> ActiveMapOrigin = new Dictionary<string, bool>()
         {
@@ -205,7 +209,7 @@ public class LoadData : MonoBehaviour
         // Write the JSON string to the file
         File.WriteAllText(filePath, jsonString);
 
-        Debug.Log("JSON file saved at: " + filePath);
+        // Debug.Log("JSON file saved at: " + filePath);
     }
 
     private void Awake()
@@ -217,6 +221,9 @@ public class LoadData : MonoBehaviour
     void Start()
     {
         //AddListener�� jump �Լ� ����
+        Object[] temp = Resources.LoadAll("additionalStudy");
+        foreach (var t in temp) recordedCSV.Add(t);
+
         button.onClick.AddListener(triggerPlay);
         audioSource = gameObject.GetComponent<AudioSource>();
         animator = avatar.GetComponent<Animator>();   
@@ -248,8 +255,29 @@ public class LoadData : MonoBehaviour
         Dictionary<string, bool> activeMapDict = ActiveMap.toDictionary();
         SaveJsonFile(activeMapDict, fileName);
 
-        actor.triggerPlay(blendshapePath);
-        Invoke("PlayAudio", 3f); 
+        if(additionalStudy) TriggerSequence();
+        else{
+            actor.triggerPlay(blendshapePath);
+
+            if(!additionalStudy) Invoke("PlayAudio", 3f);
+        }
+    }
+
+    private void TriggerSequence(){
+        int index = Random.Range(0, recordedCSV.Count);
+
+        if(recordedCSV.Count > 0){
+            Debug.Log("additionalStudy/" + recordedCSV[index].name);
+
+            blendshapePath = "additionalStudy/" + recordedCSV[index].name;
+            recordedCSV.RemoveAt(index);
+
+            Debug.Log("choosen index: " + index +  " remaining list size: " + recordedCSV.Count);
+            actor.triggerPlay(blendshapePath);
+        }
+        else{
+            Debug.Log("All recordings have been played");
+        }
     }
 
     IEnumerator AudioFinish() {
