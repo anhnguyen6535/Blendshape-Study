@@ -1111,7 +1111,7 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-      m_IsExpanded: 0
+      m_IsExpanded: 1
     - m_Location: 34
       m_ShapeIndex: 170
       m_Config:
@@ -1150,7 +1150,7 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-      m_IsExpanded: 0
+      m_IsExpanded: 1
     - m_Location: 47
       m_ShapeIndex: 167
       m_Config:

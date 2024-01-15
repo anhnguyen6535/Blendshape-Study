@@ -9037,9 +9037,9 @@ MonoBehaviour:
   start: 0
   canvas: {fileID: 203987156}
   blendshapePath: macro/anger_macro
+  csvFileName: test
   isOnlyHeadMovement: 0
   additionalStudy: 1
-  next: 0
   ActiveMap:
     m_keys: []
     m_values: 
@@ -13765,7 +13765,7 @@ PrefabInstance:
     - target: {fileID: 5573175897873672105, guid: 1218522207c3ff743930cdc3483f3471,
         type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[120]
-      value: 0
+      value: 1.9428357
       objectReference: {fileID: 0}
     - target: {fileID: 5573175897873672105, guid: 1218522207c3ff743930cdc3483f3471,
         type: 3}
@@ -13780,7 +13780,7 @@ PrefabInstance:
     - target: {fileID: 5573175897873672105, guid: 1218522207c3ff743930cdc3483f3471,
         type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[129]
-      value: 0
+      value: 7.7375796e-28
       objectReference: {fileID: 0}
     - target: {fileID: 5573175897873672105, guid: 1218522207c3ff743930cdc3483f3471,
         type: 3}
@@ -15732,12 +15732,12 @@ PrefabInstance:
     - target: {fileID: 3215906701955198892, guid: 5896dccdd4b4bd4489e64523354d7510,
         type: 3}
       propertyPath: m_BlendShapes.MouthLowerDownLeft
-      value: 0.020217726
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3215906701955198892, guid: 5896dccdd4b4bd4489e64523354d7510,
         type: 3}
       propertyPath: m_BlendShapes.MouthLowerDownRight
-      value: 0.018151196
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3578364402768829186, guid: 5896dccdd4b4bd4489e64523354d7510,
         type: 3}
@@ -15816,8 +15816,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8464042523937228014, guid: 5896dccdd4b4bd4489e64523354d7510,
         type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[11]
+      value: 4.382432e-19
+      objectReference: {fileID: 0}
+    - target: {fileID: 8464042523937228014, guid: 5896dccdd4b4bd4489e64523354d7510,
+        type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[12]
-      value: 2.0217726
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8464042523937228014, guid: 5896dccdd4b4bd4489e64523354d7510,
         type: 3}
@@ -16091,6 +16096,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8464042523937228014, guid: 5896dccdd4b4bd4489e64523354d7510,
         type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[161]
+      value: 0.93595946
+      objectReference: {fileID: 0}
+    - target: {fileID: 8464042523937228014, guid: 5896dccdd4b4bd4489e64523354d7510,
+        type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[163]
       value: 17.204178
       objectReference: {fileID: 0}
@@ -16112,7 +16122,7 @@ PrefabInstance:
     - target: {fileID: 8464042523937228014, guid: 5896dccdd4b4bd4489e64523354d7510,
         type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[170]
-      value: 1.8151196
+      value: 0.43727368
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

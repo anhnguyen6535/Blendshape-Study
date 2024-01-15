@@ -7,6 +7,7 @@ using Unity.LiveCapture.ARKitFaceCapture;
 using System.IO;
 using Newtonsoft.Json;
 using System.Linq;
+using System;
 
 
 [System.Serializable]
@@ -47,11 +48,13 @@ public class LoadData : MonoBehaviour
     public bool start = false;
     [SerializeField] private GameObject canvas;
     public string blendshapePath = "blendshapes/airpollution_actor";
+    public string csvFileName = "test";
+    private string csvPath = "";
+    private string previousEmotion = "Start";
     private Animator animator;
     public bool isOnlyHeadMovement = true; 
     public bool additionalStudy = true;
-    public bool next = false;
-    private List<Object> recordedCSV = new();
+    private List<UnityEngine.Object> recordedCSV = new();
 
     public Dictionary<string, bool> ActiveMapOrigin = new Dictionary<string, bool>()
         {
@@ -221,18 +224,25 @@ public class LoadData : MonoBehaviour
     void Start()
     {
         //AddListener�� jump �Լ� ����
-        Object[] temp = Resources.LoadAll("additionalStudy");
+        UnityEngine.Object[] temp = Resources.LoadAll("additionalStudy");
         foreach (var t in temp) recordedCSV.Add(t);
 
         button.onClick.AddListener(triggerPlay);
         audioSource = gameObject.GetComponent<AudioSource>();
         animator = avatar.GetComponent<Animator>();   
+
+        // create new csv file for this scene
+        csvPath = Application.dataPath + "/Timestamps/" + DateTime.Now.ToString("dd-MM-HH-mm") + " " + csvFileName + ".csv";
+        TextWriter tw = new StreamWriter(csvPath, false);
+        tw.WriteLine("Emotion, Time");
+        tw.Close();
     }
 
     // Update is called once per frame
     void Update()
     {
         if(start){
+            LogToCSV();
             triggerPlay();
             start = false;
         }
@@ -255,7 +265,9 @@ public class LoadData : MonoBehaviour
         Dictionary<string, bool> activeMapDict = ActiveMap.toDictionary();
         SaveJsonFile(activeMapDict, fileName);
 
-        if(additionalStudy) TriggerSequence();
+        if(additionalStudy){
+            TriggerSequence();
+        } 
         else{
             actor.triggerPlay(blendshapePath);
 
@@ -264,11 +276,12 @@ public class LoadData : MonoBehaviour
     }
 
     private void TriggerSequence(){
-        int index = Random.Range(0, recordedCSV.Count);
+        int index = UnityEngine.Random.Range(0, recordedCSV.Count);
 
         if(recordedCSV.Count > 0){
             Debug.Log("additionalStudy/" + recordedCSV[index].name);
 
+            previousEmotion =  recordedCSV[index].name;
             blendshapePath = "additionalStudy/" + recordedCSV[index].name;
             recordedCSV.RemoveAt(index);
 
@@ -288,6 +301,12 @@ public class LoadData : MonoBehaviour
         // if(!isOnlyHeadMovement) animator.SetLayerWeight(1, 0);
         if(!isOnlyHeadMovement) animator.SetInteger("state", 0);
         Debug.Log("false");
+    }
+
+    public void LogToCSV(){
+        TextWriter tw = new StreamWriter(csvPath, true);
+        tw.WriteLine(previousEmotion + "," + DateTime.Now.ToString("HH:mm:ss"));
+        tw.Close();
     }
 
 }
