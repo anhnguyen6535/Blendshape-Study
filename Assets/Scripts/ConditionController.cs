@@ -10,7 +10,7 @@ public class ConditionController : MonoBehaviour
     [SerializeField] private GameObject[] shortDistance;
     [SerializeField] private GameObject[] longDistance;
     [SerializeField] private GameObject xrCamera;
-    [SerializeField] private GameObject avatar;
+    public GameObject avatar;
     private GameObject cameraPlaceholder;
 
     // Start is called before the first frame update

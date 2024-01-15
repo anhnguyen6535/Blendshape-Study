@@ -232,7 +232,7 @@ public class LoadData : MonoBehaviour
         animator = avatar.GetComponent<Animator>();   
 
         // create new csv file for this scene
-        csvPath = Application.dataPath + "/Timestamps/" + DateTime.Now.ToString("dd-MM-HH-mm") + " " + csvFileName + ".csv";
+        csvPath = Application.dataPath + "/Results/Timestamps/" + DateTime.Now.ToString("dd-MM-HH-mm") + " " + csvFileName + ".csv";
         TextWriter tw = new StreamWriter(csvPath, false);
         tw.WriteLine("Emotion, Time");
         tw.Close();
