@@ -43,6 +43,24 @@ public class DistanceController : MonoBehaviour
             LogDistanceToCSV();
             log = false;
         }
+
+        if(OVRInput.Get(OVRInput.Button.SecondaryThumbstickDown)){
+            Debug.Log("Down");
+            MoveAvatarCloser();
+        }
+
+        if(OVRInput.Get(OVRInput.Button.SecondaryThumbstickUp)){
+            MoveAvatarFurther();
+            Debug.Log("Up");
+        }
+
+        if(OVRInput.GetDown(OVRInput.Button.One)){
+            MoveAvatarCloser();
+        }
+
+        else if (OVRInput.GetDown(OVRInput.Button.Two)){
+            MoveAvatarFurther();
+        }
     }
 
     void MoveAvatarCloser(){

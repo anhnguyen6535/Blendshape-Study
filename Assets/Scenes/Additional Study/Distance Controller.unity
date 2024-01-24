@@ -3151,7 +3151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a87666edfc7dbc478b5db3f14fedfcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingSpeed: 0.5
+  movingSpeed: 0.1
   condition: 1
   initialPosition: {x: 0, y: 0, z: 1}
   log: 0
