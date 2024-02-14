@@ -52,7 +52,7 @@ public class LoadData : MonoBehaviour
     private string csvPath = "";
     private string previousEmotion = "Start";
     private Animator animator;
-    public bool isOnlyHeadMovement = true; 
+    // public bool isOnlyHeadMovement = true; 
     public bool additionalStudy = true;
     private List<UnityEngine.Object> recordedCSV = new();
 
@@ -248,14 +248,14 @@ public class LoadData : MonoBehaviour
         }
     }
 
-    void PlayAudio()
-    {
-        audioSource.Play();
-        // if(!isOnlyHeadMovement) animator.SetLayerWeight(1, 1);
-        if(!isOnlyHeadMovement) animator.SetInteger("state", 1);
-        Debug.Log("true");
-        StartCoroutine(AudioFinish()); 
-    }
+    // void PlayAudio()
+    // {
+    //     audioSource.Play();
+    //     // if(!isOnlyHeadMovement) animator.SetLayerWeight(1, 1);
+    //     if(!isOnlyHeadMovement) animator.SetInteger("state", 1);
+    //     Debug.Log("true");
+    //     StartCoroutine(AudioFinish()); 
+    // }
 
     public void triggerPlay()
     {
@@ -265,14 +265,7 @@ public class LoadData : MonoBehaviour
         Dictionary<string, bool> activeMapDict = ActiveMap.toDictionary();
         SaveJsonFile(activeMapDict, fileName);
 
-        if(additionalStudy){
-            TriggerSequence();
-        } 
-        else{
-            actor.triggerPlay(blendshapePath);
-
-            if(!additionalStudy) Invoke("PlayAudio", 3f);
-        }
+        TriggerSequence();
     }
 
     private void TriggerSequence(){
@@ -293,15 +286,15 @@ public class LoadData : MonoBehaviour
         }
     }
 
-    IEnumerator AudioFinish() {
-        yield return new WaitWhile(()=>audioSource.isPlaying);
+    // IEnumerator AudioFinish() {
+    //     yield return new WaitWhile(()=>audioSource.isPlaying);
         
-        canvas.SetActive(true);
-        // animator.SetLayerWeight(1, 0);
-        // if(!isOnlyHeadMovement) animator.SetLayerWeight(1, 0);
-        if(!isOnlyHeadMovement) animator.SetInteger("state", 0);
-        Debug.Log("false");
-    }
+    //     canvas.SetActive(true);
+    //     // animator.SetLayerWeight(1, 0);
+    //     // if(!isOnlyHeadMovement) animator.SetLayerWeight(1, 0);
+    //     if(!isOnlyHeadMovement) animator.SetInteger("state", 0);
+    //     Debug.Log("false");
+    // }
 
     public void LogToCSV(){
         TextWriter tw = new StreamWriter(csvPath, true);
