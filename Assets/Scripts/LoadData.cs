@@ -49,13 +49,8 @@ public class LoadData : MonoBehaviour
     [SerializeField] private GameObject canvas;
     public string blendshapePath = "blendshapes/airpollution_actor";
     public string csvFileName = "test";
-    private string csvPath = "";
-    private string previousEmotion = "Start";
     private Animator animator;
     public bool isOnlyHeadMovement = true; 
-    public bool additionalStudy = true;
-    private List<UnityEngine.Object> recordedCSV = new();
-
     public Dictionary<string, bool> ActiveMapOrigin = new Dictionary<string, bool>()
         {
             {"BrowDownLeft",true},
@@ -224,25 +219,15 @@ public class LoadData : MonoBehaviour
     void Start()
     {
         //AddListener�� jump �Լ� ����
-        UnityEngine.Object[] temp = Resources.LoadAll("additionalStudy");
-        foreach (var t in temp) recordedCSV.Add(t);
-
         button.onClick.AddListener(triggerPlay);
         audioSource = gameObject.GetComponent<AudioSource>();
         animator = avatar.GetComponent<Animator>();   
-
-        // create new csv file for this scene
-        csvPath = Application.dataPath + "/Results/Timestamps/" + DateTime.Now.ToString("dd-MM-HH-mm") + " " + csvFileName + ".csv";
-        TextWriter tw = new StreamWriter(csvPath, false);
-        tw.WriteLine("Emotion, Time");
-        tw.Close();
     }
 
     // Update is called once per frame
     void Update()
     {
         if(start){
-            LogToCSV();
             triggerPlay();
             start = false;
         }
@@ -265,32 +250,9 @@ public class LoadData : MonoBehaviour
         Dictionary<string, bool> activeMapDict = ActiveMap.toDictionary();
         SaveJsonFile(activeMapDict, fileName);
 
-        if(additionalStudy){
-            TriggerSequence();
-        } 
-        else{
-            actor.triggerPlay(blendshapePath);
+        actor.triggerPlay(blendshapePath);
 
-            if(!additionalStudy) Invoke("PlayAudio", 3f);
-        }
-    }
-
-    private void TriggerSequence(){
-        int index = UnityEngine.Random.Range(0, recordedCSV.Count);
-
-        if(recordedCSV.Count > 0){
-            Debug.Log("additionalStudy/" + recordedCSV[index].name);
-
-            previousEmotion =  recordedCSV[index].name;
-            blendshapePath = "additionalStudy/" + recordedCSV[index].name;
-            recordedCSV.RemoveAt(index);
-
-            Debug.Log("choosen index: " + index +  " remaining list size: " + recordedCSV.Count);
-            actor.triggerPlay(blendshapePath);
-        }
-        else{
-            Debug.Log("All recordings have been played");
-        }
+        Invoke("PlayAudio", 3f);
     }
 
     IEnumerator AudioFinish() {
@@ -301,12 +263,6 @@ public class LoadData : MonoBehaviour
         // if(!isOnlyHeadMovement) animator.SetLayerWeight(1, 0);
         if(!isOnlyHeadMovement) animator.SetInteger("state", 0);
         Debug.Log("false");
-    }
-
-    public void LogToCSV(){
-        TextWriter tw = new StreamWriter(csvPath, true);
-        tw.WriteLine(previousEmotion + "," + DateTime.Now.ToString("HH:mm:ss"));
-        tw.Close();
     }
 
 }
